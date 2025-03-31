@@ -1,46 +1,83 @@
 # AI Engineer Pack Clone
 
-This is a clone of the [AI Engineer Pack](https://www.aiengineerpack.com/) website, created for demonstration purposes.
+A clone of the AI Engineer Pack website, showcasing essential tools and resources for AI developers.
 
-## About
+## 🚀 Features
 
-The AI Engineer Pack is a curated collection of essential AI development tools and services with special offers for AI developers. This project is a simplified clone of their website, built using HTML, CSS, and JavaScript.
+- Responsive design that works on desktop and mobile
+- Dynamic tool cards with offer details
+- Interactive tabs for filtering tools
+- Smooth animations and transitions
+- Fallback handling for missing images
 
-## Features
-
-- Responsive design that works on mobile and desktop
-- Interactive tool cards with offer details
-- Tab navigation between different versions
-- Clean, modern UI inspired by the original site
-
-## Technologies Used
+## 🛠️ Technologies Used
 
 - HTML5
-- CSS3 (with Tailwind CSS)
-- JavaScript (Vanilla JS)
-- SVG for graphics and icons
+- CSS3 with Tailwind CSS
+- JavaScript (Vanilla)
+- SVG for graphics
 
-## Installation & Usage
+## 🔧 Installation
 
-1. Clone this repository
-2. Open `index.html` in your browser
-3. No build steps or dependencies required!
+1. Clone the repository:
+```
+git clone https://github.com/realranjan/ai-engineer-pack-clone.git
+```
 
-## Project Structure
+2. Open `index.html` in your browser or use a local development server:
+```
+# Using Python
+python -m http.server
 
-- `index.html` - The main HTML file
-- `styles.css` - Custom CSS styling
-- `script.js` - JavaScript for dynamic content
-- `assets/` - Contains logos and images
+# Or with Node.js
+npx serve
+```
 
-## Credits
+## 📁 Project Structure
 
-This project was created using data extracted with [Firecrawl](https://www.firecrawl.dev/), a tool for extracting LLM-ready data from the web.
+```
+ai-engineer-pack-clone/
+├── index.html          # Main HTML file
+├── styles.css          # Custom CSS styles
+├── script.js           # JavaScript functionality
+├── assets/             # Images and other assets
+│   ├── logo_black_vol_3.svg
+│   ├── hero.svg
+│   ├── favicon.svg
+│   ├── placeholder.svg
+│   └── [tool logos]    # Various tool logos as SVG
+└── README.md           # This file
+```
 
-## Disclaimer
+## 🔄 Data Updates
 
-This is a clone created for educational purposes only. All logos and company names belong to their respective owners.
+All tool data is stored in the `toolsData` array in `script.js`. To add or modify tools, simply update this array.
 
-## License
+## 🎨 Customization
+
+The site uses a combination of Tailwind CSS and custom CSS:
+
+- Base styles and variables are in `styles.css`
+- Component styles are added with Tailwind classes
+- Custom animations are defined in `styles.css`
+
+## 💻 Browser Compatibility
+
+The site is compatible with:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🙏 Credits
+
+- Data extraction performed using [Firecrawl](https://www.firecrawl.dev/)
+- Logo placeholder designs created specifically for this project
+
+## ⚠️ Disclaimer
+
+This is an educational clone created for learning purposes only. It is not affiliated with the original AI Engineer Pack website.
+
+## 📄 License
 
 MIT License

@@ -13,7 +13,7 @@ const toolsData = [
     {
         id: "notion",
         name: "Notion",
-        logo: "assets/notion.png",
+        logo: "assets/notion.svg",
         url: "https://www.notion.com/",
         description: "The all-in-one workspace. Write. Plan. Collaborate. With a little help from AI.",
         offer: "Up to 6 months free with unlimited AI (worth $6k)"
@@ -21,7 +21,7 @@ const toolsData = [
     {
         id: "intercom",
         name: "Intercom",
-        logo: "assets/intercom.png",
+        logo: "assets/placeholder.svg",
         url: "https://www.intercom.com/",
         description: "Fin is a breakthrough <a href='https://www.intercom.com/drlp/ai-agent' target='_blank'>AI agent</a> that automatically solves customer issues.",
         offer: "100% off Intercom in year one offer, worth $12,000 in savings. 50% off in the second year, and 25% in year three."
@@ -37,7 +37,7 @@ const toolsData = [
     {
         id: "agentql",
         name: "AgentQL",
-        logo: "assets/agentql.png",
+        logo: "assets/placeholder.svg",
         url: "https://agentql.com/",
         description: "AgentQL provides AI-powered data extraction and browser interaction tools for people and agents.",
         offer: "3 months of Professional Plan (worth $300)"
@@ -45,7 +45,7 @@ const toolsData = [
     {
         id: "clerk",
         name: "Clerk",
-        logo: "assets/clerk.png",
+        logo: "assets/placeholder.svg",
         url: "https://clerk.com/",
         description: "Clerk is a complete suite of <a href='https://clerk.com/docs/customization/elements/overview' target='_blank'>embeddable UIs</a>, flexible APIs, and admin dashboards to <a href='https://clerk.com/user-authentication' target='_blank'>authenticate and manage your users</a>.",
         offer: "50% off Clerk's Pro Plan for 6 months"
@@ -53,7 +53,7 @@ const toolsData = [
     {
         id: "coval",
         name: "Coval",
-        logo: "assets/coval.jpg",
+        logo: "assets/placeholder.svg",
         url: "https://www.coval.dev/",
         description: "Coval is the go-to platform for evaluating, simulating and monitoring your voice and chat agents.",
         offer: "$50 off for our \"Core\" plan"
@@ -61,7 +61,7 @@ const toolsData = [
     {
         id: "daytona",
         name: "Daytona",
-        logo: "assets/daytona.png",
+        logo: "assets/placeholder.svg",
         url: "https://daytona.io/",
         description: "Daytona is a Secure and Elastic Infrastructure for Running Your AI-Generated Code.",
         offer: "$1000 worth of compute credits for new users"
@@ -69,7 +69,7 @@ const toolsData = [
     {
         id: "firecrawl",
         name: "Firecrawl",
-        logo: "assets/firecrawl.png",
+        logo: "assets/firecrawl.svg",
         url: "https://www.firecrawl.dev/",
         description: "Firecrawl is the easiest way to extract LLM-ready data from the web.",
         offer: "50,000 credits and 500,000 /extract tokens ($100~ value)"
@@ -77,7 +77,7 @@ const toolsData = [
     {
         id: "huggingface",
         name: "HuggingFace",
-        logo: "assets/huggingface.png",
+        logo: "assets/placeholder.svg",
         url: "https://huggingface.co/",
         description: "Hugging Face is the collaboration platform to share, explore, discover, and experiment with <a href='https://huggingface.co/models' target='_blank'>open-source ML</a>.",
         offer: "6 months of HF Pro"
@@ -102,7 +102,7 @@ function createToolCards() {
                 <div class="flex items-center gap-3 w-full p-3 sm:p-6">
                     <div class="w-10 h-10 rounded-lg flex justify-center items-center shrink-0 overflow-hidden border">
                         <div class="w-full h-full">
-                            <img alt="${tool.name} logo" class="object-contain w-full h-full" src="${tool.logo}">
+                            <img alt="${tool.name} logo" class="object-contain w-full h-full" src="${tool.logo}" onerror="this.onerror=null; this.src='assets/placeholder.svg';">
                         </div>
                     </div>
                     <div>
@@ -158,9 +158,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-// Simple placeholder for missing images
-function handleMissingImage(img) {
-    img.onerror = null;
-    img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Crect fill="%23f0f0f0" width="100" height="100"/%3E%3Cpath fill="%23cccccc" d="M50 30 L70 70 L30 70 Z"/%3E%3C/svg%3E';
-}

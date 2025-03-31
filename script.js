@@ -21,7 +21,7 @@ const toolsData = [
     {
         id: "intercom",
         name: "Intercom",
-        logo: "assets/placeholder.svg",
+        logo: "assets/intercom.svg",
         url: "https://www.intercom.com/",
         description: "Fin is a breakthrough <a href='https://www.intercom.com/drlp/ai-agent' target='_blank'>AI agent</a> that automatically solves customer issues.",
         offer: "100% off Intercom in year one offer, worth $12,000 in savings. 50% off in the second year, and 25% in year three."
@@ -37,7 +37,7 @@ const toolsData = [
     {
         id: "agentql",
         name: "AgentQL",
-        logo: "assets/placeholder.svg",
+        logo: "assets/agentql.svg",
         url: "https://agentql.com/",
         description: "AgentQL provides AI-powered data extraction and browser interaction tools for people and agents.",
         offer: "3 months of Professional Plan (worth $300)"
@@ -45,7 +45,7 @@ const toolsData = [
     {
         id: "clerk",
         name: "Clerk",
-        logo: "assets/placeholder.svg",
+        logo: "assets/clerk.svg",
         url: "https://clerk.com/",
         description: "Clerk is a complete suite of <a href='https://clerk.com/docs/customization/elements/overview' target='_blank'>embeddable UIs</a>, flexible APIs, and admin dashboards to <a href='https://clerk.com/user-authentication' target='_blank'>authenticate and manage your users</a>.",
         offer: "50% off Clerk's Pro Plan for 6 months"
@@ -53,7 +53,7 @@ const toolsData = [
     {
         id: "coval",
         name: "Coval",
-        logo: "assets/placeholder.svg",
+        logo: "assets/coval.svg",
         url: "https://www.coval.dev/",
         description: "Coval is the go-to platform for evaluating, simulating and monitoring your voice and chat agents.",
         offer: "$50 off for our \"Core\" plan"
@@ -61,7 +61,7 @@ const toolsData = [
     {
         id: "daytona",
         name: "Daytona",
-        logo: "assets/placeholder.svg",
+        logo: "assets/daytona.svg",
         url: "https://daytona.io/",
         description: "Daytona is a Secure and Elastic Infrastructure for Running Your AI-Generated Code.",
         offer: "$1000 worth of compute credits for new users"
@@ -77,7 +77,7 @@ const toolsData = [
     {
         id: "huggingface",
         name: "HuggingFace",
-        logo: "assets/placeholder.svg",
+        logo: "assets/huggingface.svg",
         url: "https://huggingface.co/",
         description: "Hugging Face is the collaboration platform to share, explore, discover, and experiment with <a href='https://huggingface.co/models' target='_blank'>open-source ML</a>.",
         offer: "6 months of HF Pro"
@@ -157,4 +157,17 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('The AI Engineer Pack provides exclusive discounts and offers for developers building AI applications.');
         });
     }
+    
+    // Add click handler for redeem buttons
+    document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('redeem-button')) {
+            const toolCard = event.target.closest('.tool-card');
+            const toolId = toolCard ? toolCard.id : null;
+            const tool = toolsData.find(t => t.id === toolId);
+            
+            if (tool) {
+                alert(`To redeem the offer for ${tool.name}, please visit their website: ${tool.url}`);
+            }
+        }
+    });
 });

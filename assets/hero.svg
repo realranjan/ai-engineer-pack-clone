@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#grad1)" />
+  
+  <!-- Decorative circles -->
+  <circle cx="300" cy="200" r="60" fill="url(#grad2)" opacity="0.7" />
+  <circle cx="700" cy="500" r="100" fill="url(#grad2)" opacity="0.5" />
+  <circle cx="1100" cy="250" r="80" fill="url(#grad2)" opacity="0.6" />
+  
+  <!-- Abstract lines -->
+  <path d="M0,150 Q400,50 800,300 T1400,150" stroke="#a5b4fc" stroke-width="4" fill="none" opacity="0.3" />
+  <path d="M0,400 Q400,550 800,450 T1400,550" stroke="#a5b4fc" stroke-width="3" fill="none" opacity="0.2" />
+  
+  <!-- Text indicating this is AI Engineer Pack -->
+  <text x="50%" y="350" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="48" fill="#4f46e5">
+    AI Engineer Pack
+  </text>
+  <text x="50%" y="420" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="24" fill="#4338ca">
+    Essential tools for AI developers
+  </text>
+</svg>
